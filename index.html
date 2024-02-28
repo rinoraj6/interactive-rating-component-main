@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="review-card">
+    
+    <main class="main">
+      <!-- Rating state start -->
+      <div class="container">
+        
+        <div class="star-icon">
+          <img src="./images/icon-star.svg" alt="">
+        </div>
+        
+        <div class="rate-us">
+          <h2>How did we do?</h2>
+        </div>
+  
+        <div class="review-request">
+          <p>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+        </div>
+  
+        <div class="rating">
+          <div class="rating-box" id="rating-box-1" onclick="activate(1)">1</div>
+          <div class="rating-box" id="rating-box-2" onclick="activate(2)">2</div>
+          <div class="rating-box" id="rating-box-3" onclick="activate(3)">3</div>
+          <div class="rating-box" id="rating-box-4" onclick="activate(4)">4</div>
+          <div class="rating-box" id="rating-box-5" onclick="activate(5)">5</div>
+        </div>
+  
+        <button class="submit">submit</button>
+      </div>
+      <!-- Rating state end -->
+    </main>
+  
+    <div class="main-thank-you">
+      <!--thank you-->  
+      <div class="container">
+        
+        <div class="thank-you-img-box">
+          <img src="./images/illustration-thank-you.svg" alt="">
+        </div>
+  
+        <div class="selection">
+          <p>You selected <span id="rating-val"></span> out of 5</p>
+        </div>
+  
+        <div class="thanks-header">
+          <h2>Thank you!</h2>
+        </div>
+  
+        <div class="thanks-msg">
+          <p>We appreciate you taking the time to give a rating. If you ever need more tech support, dont hestitate to get in touch!</p>
+        </div>
+  
+      </div>
+      <!-- Thank you state end -->
+    </div>
+
+  </div>
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+  <!-- script -->
+  <script src="./script.js"></script>
+</body>
+</html>

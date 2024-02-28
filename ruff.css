@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cards{
+    border: 1px solid;
+    width: 50%;
+    max-width: 500px;
+    margin: 12rem auto   ;
+    position: relative
+}
+
+.card-1{
+    background-color: red;
+    position: absolute;
+}
+.card-2{
+    background-color: violet;   
+}
+
+.hide-me{
+    display: none;
+}
